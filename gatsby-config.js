@@ -37,6 +37,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: "Gatsby Contentful starter",
+    siteUrl: "https://torrent-rank.ga",
   },
   pathPrefix: "/gatsby-contentful-starter",
   plugins: [
@@ -44,6 +45,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
