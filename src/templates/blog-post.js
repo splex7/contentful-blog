@@ -37,9 +37,6 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
-            <div
-              {post.sum}
-            />
           </div>
         </div>
       </Layout>
@@ -64,7 +61,6 @@ export const pageQuery = graphql`
           html
         }
       }
-      sum
     }
   }
 `
